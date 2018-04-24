@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <feature automatic="selected" name="SijaDictionary"/>
+    <feature automatic="selected" name="Core"/>
+    <feature automatic="selected" name="MultipleLanguages"/>
+    <feature manual="selected" name="Lections"/>
+    <feature automatic="selected" name="BasicManagement"/>
+    <feature automatic="selected" name="Persistence"/>
+    <feature automatic="selected" name="GUI"/>
+    <feature automatic="selected" manual="selected" name="AddPictures"/>
+    <feature manual="selected" name="Filesystem"/>
+    <feature manual="selected" name="URL"/>
+    <feature automatic="selected" manual="selected" name="Exchangeability"/>
+    <feature manual="selected" name="Import"/>
+    <feature automatic="selected" manual="selected" name="Export"/>
+    <feature automatic="unselected" name="JavaProperty"/>
+    <feature manual="selected" name="CSV"/>
+    <feature manual="selected" name="Synonyms"/>
+    <feature automatic="selected" name="GUISearch"/>
+</configuration>
