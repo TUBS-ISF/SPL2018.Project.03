@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+    <properties/>
+    <struct>
+        <and abstract="true" mandatory="true" name="SijaDictionary">
+            <and mandatory="true" name="Core">
+                <feature mandatory="true" name="MultipleLanguages"/>
+                <feature name="Lections"/>
+                <feature mandatory="true" name="BasicManagement"/>
+                <feature mandatory="true" name="Persistence"/>
+            </and>
+            <and mandatory="true" name="GUI">
+                <or name="AddPictures">
+                    <feature name="Suggestions"/>
+                    <and name="Filesystem">
+                        <feature name="FSDragAndDrop"/>
+                    </and>
+                    <and name="URL">
+                        <feature name="URLDragAndDrop"/>
+                    </and>
+                </or>
+                <and abstract="true" name="Exchangeability">
+                    <feature name="Import"/>
+                    <alt name="Export">
+                        <feature name="JavaProperty"/>
+                        <feature name="CSV"/>
+                    </alt>
+                </and>
+                <and name="Synonyms">
+                    <feature name="SynonymSuggestions"/>
+                </and>
+                <feature name="Trainer"/>
+                <and mandatory="true" name="GUISearch">
+                    <feature name="Autocomplete"/>
+                </and>
+            </and>
+            <and name="CLI">
+                <feature mandatory="true" name="CLISearch"/>
+            </and>
+        </and>
+    </struct>
+    <constraints/>
+    <calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+    <comments/>
+    <featureOrder userDefined="false"/>
+</featureModel>
