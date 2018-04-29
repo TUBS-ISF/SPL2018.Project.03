@@ -28,112 +28,117 @@ Daten werden Persistent per SQLite-Datenbank gespeichert
 </description>
                 </feature>
             </and>
-            <and name="GUI">
+            <or abstract="true" mandatory="true" name="Interface">
                 <description>
+Die Wahl eines Interfaces über welches das Programm gesteuert wird
+</description>
+                <and name="GUI">
+                    <description>
 Graphische Benutzeroberfläche für die Verwaltung der Wörterbücher
 </description>
-                <or name="AddPictures">
-                    <description>
+                    <or name="AddPictures">
+                        <description>
 Dazu hinzufügen von Bildern zu den Wörtern
 </description>
-                    <feature name="Suggestions">
-                        <description>
+                        <feature name="Suggestions">
+                            <description>
 Hinzufügen von Bilder per Vorschlag (Pixabay-Online-Suche)
 </description>
-                    </feature>
-                    <and name="Filesystem">
-                        <description>
+                        </feature>
+                        <and name="Filesystem">
+                            <description>
 Laden von Bildern aus lokalen Dateien (per FileChooser)
 </description>
-                        <feature name="FSDragAndDrop">
-                            <description>
+                            <feature name="FSDragAndDrop">
+                                <description>
 Laden von Bildern aus lokalen Dateien (per Drag and Drop)
 </description>
-                        </feature>
-                    </and>
-                    <and name="URL">
-                        <description>
+                            </feature>
+                        </and>
+                        <and name="URL">
+                            <description>
 Laden von Bildern per URL
 </description>
-                        <feature name="URLDragAndDrop">
-                            <description>
+                            <feature name="URLDragAndDrop">
+                                <description>
 Laden von Bildern per URL (per Drag and Drop)
 </description>
-                        </feature>
-                    </and>
-                </or>
-                <and abstract="true" name="Exchangeability">
-                    <description>
+                            </feature>
+                        </and>
+                    </or>
+                    <and abstract="true" name="Exchangeability">
+                        <description>
 Möglichkeiten des Wörter-Austausches (ohne Bilder, etc)
 </description>
-                    <feature name="Import">
-                        <description>
+                        <feature name="Import">
+                            <description>
 Importieren von Vokabeln/Wörtern aus einer externen Datei in ein Wörterbuch
 Die Einträge sind durch = und Leerzeilen getrennt:
 Eintrag 1a = Eintrag 1b
 Eintrag 2a = Eintrag 2b
 ...
 </description>
-                    </feature>
-                    <alt name="Export">
-                        <description>
+                        </feature>
+                        <alt name="Export">
+                            <description>
 Exportieren von Wörterbüchern, bzw Lektionen/Kapiteln
 </description>
-                        <feature name="JavaProperty">
-                            <description>
+                            <feature name="JavaProperty">
+                                <description>
 Exportieren von Vokabeln/Wörtern in eine externe Datei
 Die Einträge sind durch = und Leerzeilen getrennt:
 Eintrag 1a = Eintrag 1b
 Eintrag 2a = Eintrag 2b
 ...
 </description>
-                        </feature>
-                        <feature name="CSV">
-                            <description>
+                            </feature>
+                            <feature name="CSV">
+                                <description>
 Exportieren von Vokabeln/Wörtern in eine externe Datei
 Die Dateien sind als CSV-Datei Strukturiert
 </description>
-                        </feature>
-                    </alt>
-                </and>
-                <and name="Synonyms">
-                    <description>
+                            </feature>
+                        </alt>
+                    </and>
+                    <and name="Synonyms">
+                        <description>
 Es gibt die Möglichkeit Synonyme zu den Einträgen hinzuzufügen
 </description>
-                    <feature name="SynonymSuggestions">
-                        <description>
+                        <feature name="SynonymSuggestions">
+                            <description>
 Synonyme für die Einträge werden per Online-API (openthesaurus.de) vorgeschlagen
 </description>
-                    </feature>
-                </and>
-                <feature name="Trainer">
-                    <description>
+                        </feature>
+                    </and>
+                    <feature name="Trainer">
+                        <description>
 Die Möglichkeit des Vokabeltrainings, d.h.: 
 - Die Übersetzungen für Wörter werden abgefragt
 - Am Ende wird die erreichte Punktzahl angezeigt
 </description>
-                </feature>
-                <and name="GUISearch">
-                    <description>
+                    </feature>
+                    <and name="GUISearch">
+                        <description>
 Suchen nach Wörtern
 </description>
-                    <feature name="Autocomplete">
-                        <description>
+                        <feature name="Autocomplete">
+                            <description>
 Autovervollständigung bei der Suche nach Wörtern
+</description>
+                        </feature>
+                    </and>
+                </and>
+                <and name="CLI">
+                    <description>
+Die Steuerung per Kommandozeile
+</description>
+                    <feature mandatory="true" name="CLISearch">
+                        <description>
+Suche nach Wörtern per CLI
 </description>
                     </feature>
                 </and>
-            </and>
-            <and name="CLI">
-                <description>
-Die Steuerung per Kommandozeile
-</description>
-                <feature mandatory="true" name="CLISearch">
-                    <description>
-Suche nach Wörtern per CLI
-</description>
-                </feature>
-            </and>
+            </or>
         </and>
     </struct>
     <constraints/>
