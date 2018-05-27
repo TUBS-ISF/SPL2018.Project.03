@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <feature automatic="selected" name="SijaDictionary"/>
+    <feature automatic="selected" name="Core"/>
+    <feature automatic="selected" name="MultipleLanguages"/>
+    <feature automatic="selected" name="BasicManagement"/>
+    <feature automatic="selected" name="Persistence"/>
+    <feature automatic="selected" name="Interface"/>
+    <feature automatic="selected" manual="selected" name="GUI"/>
+    <feature manual="selected" name="AddPictures"/>
+    <feature automatic="selected" name="Filesystem"/>
+    <feature automatic="selected" name="FileChooser"/>
+</configuration>

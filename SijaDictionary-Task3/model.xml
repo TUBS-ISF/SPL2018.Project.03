@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+    <properties/>
+    <struct>
+        <and abstract="true" mandatory="true" name="SijaDictionary">
+            <and abstract="true" mandatory="true" name="Core">
+                <description>
+Grundlegende Funktionen, der unterliegenden Programbasis
+</description>
+                <feature abstract="true" mandatory="true" name="MultipleLanguages">
+                    <description>
+Auswahl mehrerer Sprachen, z.B. ger-eng, ger-fra
+</description>
+                </feature>
+                <feature abstract="true" name="Lections">
+                    <description>
+Unterteilung in Lektionen/Kapitel
+</description>
+                </feature>
+                <feature abstract="true" mandatory="true" name="BasicManagement">
+                    <description>
+Grundlegende Funktionen: Hinzufügen, Löschen und Ändern von Einträgen
+</description>
+                </feature>
+                <feature abstract="true" mandatory="true" name="Persistence">
+                    <description>
+Daten werden Persistent per SQLite-Datenbank gespeichert
+</description>
+                </feature>
+            </and>
+            <or abstract="true" mandatory="true" name="Interface">
+                <description>
+Die Wahl eines Interfaces über welches das Programm gesteuert wird
+</description>
+                <and abstract="true" name="GUI">
+                    <description>
+Graphische Benutzeroberfläche für die Verwaltung der Wörterbücher
+</description>
+                    <and name="AddPictures">
+                        <description>
+Dazu hinzufügen von Bildern zu den Wörtern
+</description>
+                        <feature abstract="true" name="Suggestions">
+                            <description>
+Hinzufügen von Bilder per Vorschlag (Pixabay-Online-Suche)
+</description>
+                        </feature>
+                        <and abstract="true" mandatory="true" name="Filesystem">
+                            <description>
+Laden von Bildern aus lokalen Dateien
+</description>
+                            <feature name="FSDragAndDrop">
+                                <description>
+Laden von Bildern aus lokalen Dateien (per Drag and Drop)
+</description>
+                            </feature>
+                            <feature abstract="true" mandatory="true" name="FileChooser">
+                                <description>
+Laden des Bildes aus einer lokalen Datei per klassischem Datei-Dialog
+</description>
+                            </feature>
+                        </and>
+                        <or abstract="true" name="URL">
+                            <description>
+Laden von Bildern per URL
+</description>
+                            <feature name="URLDragAndDrop">
+                                <description>
+Laden von Bildern per URL (per Drag and Drop des Bildes z.B. aus dem Browser heraus)
+</description>
+                            </feature>
+                            <feature name="EnterURL">
+                                <description>
+Laden des Bildes per URL-Eingabe
+</description>
+                            </feature>
+                        </or>
+                    </and>
+                    <and abstract="true" name="Exchangeability">
+                        <description>
+Möglichkeiten des Wörter-Austausches (ohne Bilder, etc)
+</description>
+                        <feature abstract="true" name="Import">
+                            <description>
+Importieren von Vokabeln/Wörtern aus einer externen Datei in ein Wörterbuch
+Die Einträge sind durch = und Leerzeilen getrennt:
+Eintrag 1a = Eintrag 1b
+Eintrag 2a = Eintrag 2b
+...
+</description>
+                        </feature>
+                        <alt abstract="true" name="Export">
+                            <description>
+Exportieren von Wörterbüchern, bzw Lektionen/Kapiteln
+</description>
+                            <feature abstract="true" name="JavaProperty">
+                                <description>
+Exportieren von Vokabeln/Wörtern in eine externe Datei
+Die Einträge sind durch = und Leerzeilen getrennt:
+Eintrag 1a = Eintrag 1b
+Eintrag 2a = Eintrag 2b
+...
+</description>
+                            </feature>
+                            <feature abstract="true" name="CSV">
+                                <description>
+Exportieren von Vokabeln/Wörtern in eine externe Datei
+Die Dateien sind als CSV-Datei Strukturiert
+</description>
+                            </feature>
+                        </alt>
+                    </and>
+                    <and abstract="true" name="Synonyms">
+                        <description>
+Es gibt die Möglichkeit Synonyme zu den Einträgen hinzuzufügen
+</description>
+                        <feature abstract="true" name="SynonymSuggestions">
+                            <description>
+Synonyme für die Einträge werden per Online-API (openthesaurus.de) vorgeschlagen
+</description>
+                        </feature>
+                    </and>
+                    <feature abstract="true" name="Trainer">
+                        <description>
+Die Möglichkeit des Vokabeltrainings, d.h.: 
+- Die Übersetzungen für Wörter werden abgefragt
+- Am Ende wird die erreichte Punktzahl angezeigt
+</description>
+                    </feature>
+                    <and abstract="true" name="GUISearch">
+                        <description>
+Suchen nach Wörtern
+</description>
+                        <feature abstract="true" name="Autocomplete">
+                            <description>
+Autovervollständigung bei der Suche nach Wörtern
+</description>
+                        </feature>
+                    </and>
+                    <feature abstract="true" name="ChangeLanguage">
+                        <description>
+Die Möglichkeit mehrere Sprachen auszuwählen
+</description>
+                    </feature>
+                </and>
+                <and abstract="true" name="CLI">
+                    <description>
+Die Steuerung per Kommandozeile
+</description>
+                    <feature abstract="true" mandatory="true" name="CLISearch">
+                        <description>
+Suche nach Wörtern per CLI
+</description>
+                    </feature>
+                </and>
+            </or>
+        </and>
+    </struct>
+    <constraints/>
+    <calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+    <comments/>
+    <featureOrder userDefined="false"/>
+</featureModel>
