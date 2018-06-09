@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <feature automatic="selected" name="SijaDictionary"/>
+    <feature automatic="selected" name="Core"/>
+    <feature automatic="selected" name="MultipleLanguages"/>
+    <feature manual="selected" name="Lections"/>
+    <feature automatic="selected" name="BasicManagement"/>
+    <feature automatic="selected" name="Persistence"/>
+    <feature automatic="selected" name="Interface"/>
+    <feature automatic="selected" name="GUI"/>
+    <feature automatic="selected" manual="selected" name="AddPictures"/>
+    <feature manual="selected" name="Suggestions"/>
+    <feature automatic="selected" manual="selected" name="Filesystem"/>
+    <feature manual="selected" name="FSDragAndDrop"/>
+    <feature automatic="selected" manual="selected" name="FileChooser"/>
+    <feature automatic="selected" manual="selected" name="URL"/>
+    <feature manual="selected" name="EnterURL"/>
+    <feature automatic="selected" name="Exchangeability"/>
+    <feature automatic="selected" name="Import"/>
+    <feature manual="selected" name="SimpleImport"/>
+    <feature automatic="selected" name="Export"/>
+    <feature manual="selected" name="SimpleExport"/>
+    <feature automatic="selected" manual="selected" name="Synonyms"/>
+    <feature manual="selected" name="SynonymSuggestions"/>
+    <feature manual="selected" name="Trainer"/>
+    <feature automatic="selected" name="GUISearch"/>
+    <feature manual="selected" name="Autocomplete"/>
+    <feature manual="selected" name="ChangeLanguage"/>
+</configuration>

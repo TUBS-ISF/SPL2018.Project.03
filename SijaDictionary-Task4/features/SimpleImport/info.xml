@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugins>
+	<interface id="de.faoc.sijadictionary.gui.util.importer.GuiImporter">
+		<class>SimpleFormatGuiImporter</class>
+	</interface>
+</plugins>

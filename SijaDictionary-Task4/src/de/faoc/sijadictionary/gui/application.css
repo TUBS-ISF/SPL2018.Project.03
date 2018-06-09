@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css?family=Playball');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+/* Define constants */
+.root {
+	-sija-background-color: white;
+	-sija-main-element-color: #e1e1e1;
+	-sija-main-hover-color: #e8e8e8;
+	-sija-nested-element-color: #e8e8e8;
+	-sija-nested-hover-color: #eeeeee;
+	-sija-green-button-color: #86e086;
+	-sija-green-button-hover-color: #90ee90;
+	-sija-red-button-color: #f1646c;
+	-sija-red-button-hover-color: #f4898f;
+	-sija-blue-button-color: #27a4dd;
+	-sija-blue-button-hover-color: #62aed1;
+	-sija-white-button-color: white;
+	-sija-white-button-hover-color: #f9f9f9;
+}
+
+.root {
+	
+}
+/*
+ * Main displays/containers
+ */
+.main-container {
+	-fx-background-color: transparent;
+}
+
+.display {
+	-fx-background-color: -sija-background-color;
+}
+
+.button {
+	-fx-background-radius: 7px;
+	-fx-cursor: hand;
+	-fx-background-color: -sija-main-element-color;
+}
+
+.button:hover {
+	-fx-background-color: -sija-main-hover-color;
+}
+
+.clickable {
+	-fx-cursor: hand;
+}
+
+.round {
+	-fx-background-radius: 1000;
+	-fx-border-radius: 1000;
+}
+
+.main-button {
+	-fx-background-radius: 1000;
+}
+
+.title {
+	-fx-font-family: 'Playball', cursive;
+	-fx-font-size: 30pt;
+}
+
+/*
+ * ScrollPane and ScrollBar design
+ */
+.scroll-pane, .scroll-pane>.viewport {
+	-fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical {
+	-fx-background-color: transparent;
+}
+
+.increment-button, .decrement-button {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track, .scroll-bar:vertical .track {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+	-fx-background-radius: 0;
+}
+
+.scroll-bar:horizontal .thumb, .scroll-bar:vertical .thumb {
+	-fx-background-color: -sija-main-element-color;
+	-fx-background-radius: 10;
+}
+
+.scroll-pane>.corner {
+	-fx-background-color: transparent;
+}
+
+/*
+ * Default button classes by colors
+ */
+.green-button {
+	-fx-background-color: -sija-green-button-color;
+}
+
+.green-button:hover {
+	-fx-background-color: -sija-green-button-hover-color;
+}
+
+.blue-button {
+	-fx-background-color: -sija-blue-button-color;
+}
+
+.blue-button:hover {
+	-fx-background-color: -sija-blue-button-hover-color;
+}
+
+.red-button {
+	-fx-background-color: -sija-red-button-color;
+}
+
+.red-button:hover {
+	-fx-background-color: -sija-red-button-hover-color;
+}
+
+.white-button {
+	-fx-background-color: -sija-white-button-color;
+}
+
+.white-button:hover {
+	-fx-background-color: -sija-white-button-hover-color;
+}
+
+.add-unit-button {
+	-fx-background-radius: 1000;
+	-fx-text-fill: white;
+	-fx-min-width: 50px;
+	-fx-min-height: 50px;
+	-fx-pref-width: 50px;
+	-fx-pref-height: 50px;
+	-fx-max-width: 50px;
+	-fx-max-height: 50px;
+}
+
+.unit-box {
+	-fx-background-color: -sija-main-element-color;
+	-fx-background-radius: 10;
+	-fx-spacing: 5px;
+	-fx-padding: 5px;
+}
+
+.unit-box:hover {
+	-fx-background-color: -sija-main-hover-color;
+}
+
+.export-button {
+	-fx-min-width: 30px;
+	-fx-min-height: 30;
+	-fx-pref-width: 30px;
+	-fx-pref-height: 30px;
+	-fx-max-width: 30px;
+	-fx-max-height: 30px;
+}
+
+.import-button {
+	-fx-min-width: 30px;
+	-fx-min-height: 30;
+	-fx-pref-width: 30px;
+	-fx-pref-height: 30px;
+	-fx-max-width: 30px;
+	-fx-max-height: 30px;
+}
+
+.import-format-button {
+}
+
+.export-format-button {
+}
+
+.unit-edit-button {
+	-fx-min-width: 30px;
+	-fx-min-height: 30;
+	-fx-pref-width: 30px;
+	-fx-pref-height: 30px;
+	-fx-max-width: 30px;
+	-fx-max-height: 30px;
+}
+
+.unit-delete-button {
+	-fx-min-width: 30px;
+	-fx-min-height: 30px;
+	-fx-pref-width: 30px;
+	-fx-pref-height: 30px;
+	-fx-max-width: 30px;
+	-fx-max-height: 30px;
+}
+
+.unit-name {
+	-fx-text-box-border: transparent;
+	-fx-background-color: transparent;
+	-fx-background-insets: 0;
+	-fx-padding: 1 3 1 3;
+}
+
+.unit-name:focused {
+	-fx-focus-color: transparent
+}
+
+/*
+ * HeaderBar
+ */
+.header-box {
+	-fx-background-color: -sija-background-color;
+	-fx-spacing: 5px;
+	-fx-padding: 5px;
+	-fx-border-color: black;
+	-fx-border-width: 0 0 1 0;
+	-fx-border-insets: 0;
+}
+
+.lang-chooser {
+	-fx-background-color: -sija-main-element-color;
+}
+
+.back-button {
+	-fx-background-color: transparent;
+	-fx-min-width: 30px;
+	-fx-min-height: 30px;
+	-fx-pref-width: 30px;
+	-fx-pref-height: 30px;
+	-fx-max-width: 30px;
+	-fx-max-height: 30px;
+}
+
+/*
+ * VocabDisplay
+ */
+.add-vocab-button {
+	-fx-background-radius: 1000;
+	-fx-text-fill: white;
+	-fx-min-width: 50px;
+	-fx-min-height: 50px;
+	-fx-pref-width: 50px;
+	-fx-pref-height: 50px;
+	-fx-max-width: 50px;
+	-fx-max-height: 50px;
+}
+
+.translation-box {
+	-fx-background-color: -sija-main-element-color;
+	-fx-background-radius: 100 15 15 100;
+	-fx-spacing: 5px;
+	-fx-padding: 5px;
+}
+
+.translation-text {
+	-fx-font-family: 'Playball';
+	-fx-font-size: 30;
+	-fx-text-box-border: transparent;
+	-fx-background-color: transparent;
+	-fx-background-insets: 0;
+	-fx-padding: 1 10 1 10;
+}
+
+.translation-text :focused {
+	-fx-focus-color: transparent
+}
+
+.seperator {
+	
+}
+
+.translation-delete-button {
+	-fx-min-width: 15px;
+	-fx-min-height: 15px;
+	-fx-pref-width: 15px;
+	-fx-pref-height: 15px;
+	-fx-max-width: 15px;
+	-fx-max-height: 15px;
+	-fx-opacity: 0.5;
+}
+
+.translation-delete-button:hover {
+	-fx-opacity: 1;
+	-fx-background-color: transparent;
+}
+
+.translation-image-button {
+	-fx-background-color: -sija-nested-element-color;
+	-fx-min-width: 120px;
+	-fx-min-height: 120px;
+	-fx-pref-width: 120px;
+	-fx-pref-height: 120px;
+	-fx-max-width: 120px;
+	-fx-max-height: 120px;
+}
+
+.translation-image-button:preview-mode {
+	-fx-cursor: default;
+}
+
+.translation-image-button:hover {
+	-fx-background-color: -sija-nested-hover-color;
+}
+
+.translation-image-button:drag {
+	-fx-background-color: #ffc0c0;
+}
+
+.translation-image-button:drag>.img-view {
+	-fx-opacity: 0.5;
+}
+
+.translation-image-button:preview-mode:hover {
+	-fx-background-color: -sija-nested-element-color;
+}
+
+.translation-image-delete-button {
+	-fx-min-width: 27px;
+	-fx-min-height: 27px;
+	-fx-pref-width: 27px;
+	-fx-pref-height: 27px;
+	-fx-max-width: 27px;
+	-fx-max-height: 27px;
+	-fx-border-style: solid outside;
+	-fx-border-width: 3px;
+	-fx-border-color: -sija-main-element-color;
+	-fx-border-width: 3px;
+}
+
+.translation-image-url-button {
+	-fx-min-width: 27px;
+	-fx-min-height: 27px;
+	-fx-pref-width: 27px;
+	-fx-pref-height: 27px;
+	-fx-max-width: 27px;
+	-fx-max-height: 27px;
+	-fx-border-style: solid outside;
+	-fx-border-width: 3px;
+	-fx-border-color: -sija-main-element-color;
+}
+
+.popup-box {
+	-fx-background-color: -sija-nested-element-color;
+	-fx-background-radius: 5;
+	-fx-padding: 2;
+	-fx-effect: dropshadow(gaussian, black, 10, 0, 0, 0);
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <feature automatic="selected" name="SijaDictionary"/>
+    <feature automatic="selected" name="Core"/>
+    <feature automatic="selected" name="MultipleLanguages"/>
+    <feature automatic="selected" name="BasicManagement"/>
+    <feature automatic="selected" name="Persistence"/>
+    <feature automatic="selected" name="Interface"/>
+    <feature manual="selected" name="CLI"/>
+    <feature automatic="selected" name="CLISearch"/>
+</configuration>
