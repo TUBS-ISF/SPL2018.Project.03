@@ -1,3 +1,6 @@
+```diff
+-INFO- This project exists as part of educational work and is not (yet) properly documented/commented!
+```
 # SPL2018.Project.03
 
 ## License
