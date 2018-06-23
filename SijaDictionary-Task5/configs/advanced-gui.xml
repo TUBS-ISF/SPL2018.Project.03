@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <feature automatic="selected" name="SijaDictionary"/>
+    <feature automatic="selected" name="Core"/>
+    <feature automatic="selected" name="MultipleLanguages"/>
+    <feature manual="selected" name="Lections"/>
+    <feature automatic="selected" name="BasicManagement"/>
+    <feature automatic="selected" name="Persistence"/>
+    <feature automatic="selected" name="Interface"/>
+    <feature automatic="selected" name="GUI"/>
+    <feature automatic="selected" manual="selected" name="AddPictures"/>
+    <feature automatic="selected" name="Filesystem"/>
+    <feature automatic="selected" name="FileChooser"/>
+    <feature automatic="selected" manual="selected" name="DragAndDrop"/>
+    <feature manual="selected" name="FSDragAndDrop"/>
+    <feature automatic="selected" manual="selected" name="Exchangeability"/>
+    <feature automatic="selected" manual="selected" name="Import"/>
+    <feature manual="selected" name="SimpleImport"/>
+    <feature manual="selected" name="Synonyms"/>
+</configuration>
