@@ -82,30 +82,12 @@ Laden von Bildern per URL (per Drag and Drop des Bildes z.B. aus dem Browser her
                         <description>
 Möglichkeiten des Wörter-Austausches (ohne Bilder, etc)
 </description>
-                        <or abstract="true" name="Import">
-                            <description>
-Importieren von Vokabeln/Wörtern aus einer externen Datei in ein Wörterbuch
-Die Einträge sind durch = und Leerzeilen getrennt:
-Eintrag 1a = Eintrag 1b
-Eintrag 2a = Eintrag 2b
-...
-</description>
-                            <feature name="FullImport"/>
-                            <or name="UnitImport">
-                                <feature name="CSVImport">
-                                    <description>
-Importieren von Einträgen aus einer CSV Datei
-</description>
-                                </feature>
-                                <feature name="SimpleImport"/>
-                            </or>
-                        </or>
                         <or abstract="true" name="Export">
                             <description>
 Exportieren von Wörterbüchern, bzw Lektionen/Kapiteln
 </description>
                             <feature name="FullExport"/>
-                            <or name="UnitExport">
+                            <or name="x_UnitExport">
                                 <feature name="CSVExport">
                                     <description>
 Exportieren von Vokabeln/Wörtern in eine externe Datei
@@ -121,6 +103,24 @@ Eintrag 2a;;Eintrag 2b
 ...
 </description>
                                 </feature>
+                            </or>
+                        </or>
+                        <or abstract="true" name="Import">
+                            <description>
+Importieren von Vokabeln/Wörtern aus einer externen Datei in ein Wörterbuch
+Die Einträge sind durch = und Leerzeilen getrennt:
+Eintrag 1a = Eintrag 1b
+Eintrag 2a = Eintrag 2b
+...
+</description>
+                            <feature name="FullImport"/>
+                            <or name="x_UnitImport">
+                                <feature name="CSVImport">
+                                    <description>
+Importieren von Einträgen aus einer CSV Datei
+</description>
+                                </feature>
+                                <feature name="SimpleImport"/>
                             </or>
                         </or>
                     </and>

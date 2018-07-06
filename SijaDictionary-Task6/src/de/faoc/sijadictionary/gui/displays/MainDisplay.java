@@ -38,9 +38,8 @@ public class MainDisplay extends Display<HBox> {
 			unitDisplay.setPreviousDisplay(this);
 			GuiApplicationController.getInstance().changeDisplay(unitDisplay);
 		});
-		MainButton trainerButton = MainButton.getTrainerButton();
 		
-		getRoot().getChildren().addAll(dictButton, trainerButton);
+		getRoot().getChildren().addAll(dictButton);
 	}
 
 }

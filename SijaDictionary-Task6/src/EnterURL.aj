@@ -1,3 +1,4 @@
+
 import de.faoc.sijadictionary.gui.controls.Icons;
 import de.faoc.sijadictionary.gui.controls.TranslationImageStack;
 import javafx.geometry.Bounds;

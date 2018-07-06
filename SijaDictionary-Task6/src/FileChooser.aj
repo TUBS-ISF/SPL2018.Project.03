@@ -1,3 +1,4 @@
+
 import de.faoc.sijadictionary.gui.controls.TranslationImageButton;
 
 privileged public aspect FileChooser {

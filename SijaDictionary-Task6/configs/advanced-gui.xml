@@ -7,13 +7,22 @@
     <feature automatic="selected" name="BasicManagement"/>
     <feature automatic="selected" name="Persistence"/>
     <feature automatic="selected" name="Interface"/>
-    <feature automatic="selected" name="GUI"/>
+    <feature automatic="selected" manual="selected" name="GUI"/>
     <feature automatic="selected" manual="selected" name="AddPictures"/>
-    <feature automatic="selected" name="Filesystem"/>
+    <feature automatic="selected" manual="selected" name="Filesystem"/>
     <feature automatic="selected" name="FileChooser"/>
-    <feature automatic="selected" manual="selected" name="DragAndDrop"/>
+    <feature automatic="selected" name="DragAndDrop"/>
     <feature manual="selected" name="FSDragAndDrop"/>
     <feature automatic="selected" manual="selected" name="Exchangeability"/>
+    <feature automatic="selected" manual="selected" name="Export"/>
+    <feature automatic="selected" manual="selected" name="x_UnitExport"/>
+    <feature manual="selected" name="CSVExport"/>
+    <feature manual="selected" name="SimpleExport"/>
     <feature automatic="selected" manual="selected" name="Import"/>
-    <feature manual="selected" name="Synonyms"/>
+    <feature automatic="selected" manual="selected" name="x_UnitImport"/>
+    <feature manual="selected" name="CSVImport"/>
+    <feature manual="selected" name="SimpleImport"/>
+    <feature automatic="selected" manual="selected" name="Synonyms"/>
+    <feature manual="selected" name="SynonymSuggestions"/>
+    <feature manual="selected" name="ChangeLanguage"/>
 </configuration>
