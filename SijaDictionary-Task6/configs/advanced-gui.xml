@@ -15,6 +15,5 @@
     <feature manual="selected" name="FSDragAndDrop"/>
     <feature automatic="selected" manual="selected" name="Exchangeability"/>
     <feature automatic="selected" manual="selected" name="Import"/>
-    <feature manual="selected" name="SimpleImport"/>
     <feature manual="selected" name="Synonyms"/>
 </configuration>

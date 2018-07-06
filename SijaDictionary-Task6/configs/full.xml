@@ -11,18 +11,23 @@
     <feature automatic="selected" manual="selected" name="AddPictures"/>
     <feature manual="selected" name="Suggestions"/>
     <feature automatic="selected" manual="selected" name="Filesystem"/>
-    <feature manual="selected" name="FileChooser"/>
+    <feature automatic="selected" manual="selected" name="FileChooser"/>
     <feature automatic="selected" manual="selected" name="URL"/>
     <feature automatic="selected" manual="selected" name="EnterURL"/>
     <feature automatic="selected" manual="selected" name="DragAndDrop"/>
+    <feature manual="selected" name="FSDragAndDrop"/>
     <feature manual="selected" name="URLDragAndDrop"/>
     <feature automatic="selected" manual="selected" name="Exchangeability"/>
     <feature automatic="selected" name="Import"/>
-    <feature manual="selected" name="SimpleImport"/>
+    <feature manual="selected" name="FullImport"/>
+    <feature automatic="selected" manual="selected" name="UnitImport"/>
     <feature manual="selected" name="CSVImport"/>
+    <feature manual="selected" name="SimpleImport"/>
     <feature automatic="selected" manual="selected" name="Export"/>
-    <feature manual="selected" name="SimpleExport"/>
+    <feature manual="selected" name="FullExport"/>
+    <feature automatic="selected" name="UnitExport"/>
     <feature manual="selected" name="CSVExport"/>
+    <feature manual="selected" name="SimpleExport"/>
     <feature automatic="selected" manual="selected" name="Synonyms"/>
     <feature manual="selected" name="SynonymSuggestions"/>
     <feature manual="selected" name="Trainer"/>

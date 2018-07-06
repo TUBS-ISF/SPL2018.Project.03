@@ -90,42 +90,38 @@ Eintrag 1a = Eintrag 1b
 Eintrag 2a = Eintrag 2b
 ...
 </description>
-                            <feature name="SimpleImport">
-                                <description>
-Importieren von Einträgen aus einer externen Datei.
-Die Einträge sind durch ;; getrennt:
-Eintrag 1a;;Eintrag 1b
-Eintrag 2a;;Eintrag 2b
-...
-</description>
-                            </feature>
-                            <feature name="CSVImport">
-                                <description>
+                            <feature name="FullImport"/>
+                            <or name="UnitImport">
+                                <feature name="CSVImport">
+                                    <description>
 Importieren von Einträgen aus einer CSV Datei
 </description>
-                            </feature>
-                            <feature name="FullImport"/>
+                                </feature>
+                                <feature name="SimpleImport"/>
+                            </or>
                         </or>
                         <or abstract="true" name="Export">
                             <description>
 Exportieren von Wörterbüchern, bzw Lektionen/Kapiteln
 </description>
-                            <feature name="SimpleExport">
-                                <description>
+                            <feature name="FullExport"/>
+                            <or name="UnitExport">
+                                <feature name="CSVExport">
+                                    <description>
+Exportieren von Vokabeln/Wörtern in eine externe Datei
+Die Dateien sind als CSV-Datei Strukturiert
+</description>
+                                </feature>
+                                <feature name="SimpleExport">
+                                    <description>
 Exportieren von Vokabeln/Wörtern in eine externe Datei
 Die Einträge sind durch ;;  getrennt:
 Eintrag 1a;;Eintrag 1b
 Eintrag 2a;;Eintrag 2b
 ...
 </description>
-                            </feature>
-                            <feature name="CSVExport">
-                                <description>
-Exportieren von Vokabeln/Wörtern in eine externe Datei
-Die Dateien sind als CSV-Datei Strukturiert
-</description>
-                            </feature>
-                            <feature name="FullExport"/>
+                                </feature>
+                            </or>
                         </or>
                     </and>
                     <and abstract="true" name="Synonyms">

@@ -18,8 +18,12 @@
     <feature manual="selected" name="FSDragAndDrop"/>
     <feature automatic="selected" name="Exchangeability"/>
     <feature automatic="selected" name="Import"/>
+    <feature automatic="selected" manual="selected" name="UnitImport"/>
+    <feature manual="selected" name="CSVImport"/>
     <feature manual="selected" name="SimpleImport"/>
     <feature automatic="selected" name="Export"/>
+    <feature automatic="selected" name="UnitExport"/>
+    <feature manual="selected" name="CSVExport"/>
     <feature manual="selected" name="SimpleExport"/>
     <feature automatic="selected" manual="selected" name="Synonyms"/>
     <feature manual="selected" name="SynonymSuggestions"/>
