@@ -9,7 +9,6 @@ import java.util.List;
 import de.faoc.sijadictionary.core.persistence.Translation;
 import de.faoc.sijadictionary.gui.controls.UnitBox;
 import javafx.stage.Window;
-import x.UnitImport;
 import x.UnitImport.BasicGuiImporter;
 import x.UnitImport.GuiImporter;
 
@@ -18,14 +17,14 @@ public privileged aspect SimpleImport {
 	List<GuiImporter> around(UnitBox o) : this(o) && execution(List<GuiImporter> UnitBox.getImporters()){
 		List<GuiImporter> importers = proceed(o);
 		Window window = o.getScene().getWindow();
-		importers.add(new SimpleFormatGuiImporter(UnitImport.aspectOf(), window));
+		importers.add(new SimpleFormatGuiImporter(window));
 		return importers;
 	}
 	
-	public class SimpleFormatGuiImporter extends BasicGuiImporter {
-		
-		public SimpleFormatGuiImporter(UnitImport unitImport, Window window) {
-			unitImport.super(window);
+	public static class SimpleFormatGuiImporter extends BasicGuiImporter {
+
+		public SimpleFormatGuiImporter(Window window) {
+			super(window);
 		}
 
 		@Override

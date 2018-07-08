@@ -11,7 +11,6 @@ import java.util.regex.Pattern;
 import de.faoc.sijadictionary.core.persistence.Translation;
 import de.faoc.sijadictionary.gui.controls.UnitBox;
 import javafx.stage.Window;
-import x.UnitImport;
 import x.UnitImport.BasicGuiImporter;
 import x.UnitImport.GuiImporter;
 
@@ -20,14 +19,14 @@ public privileged aspect CSVImport{
 	List<GuiImporter> around(UnitBox o) : this(o) && execution(List<GuiImporter> UnitBox.getImporters()){
 		List<GuiImporter> importers = proceed(o);
 		Window window = o.getScene().getWindow();
-		importers.add(new CsvGuiImporter(UnitImport.aspectOf(), window));
+		importers.add(new CsvGuiImporter(window));
 		return importers;
 	}
 	
-	public class CsvGuiImporter extends BasicGuiImporter {
-		
-		public CsvGuiImporter(UnitImport unitImport, Window window) {
-			unitImport.super(window);
+	public static class CsvGuiImporter extends BasicGuiImporter {
+
+		public CsvGuiImporter(Window window) {
+			super(window);
 		}
 
 		private final Pattern CSV_LINE_PATTERN = Pattern.compile("^\"(.*?)\"\\s*,\\s*\"(.*?)\"$");

@@ -1,5 +1,6 @@
 package x;
 
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -89,7 +90,7 @@ public privileged aspect UnitExport {
 	 * CLASS: BasicGuiExporter
 	 */
 	
-	public abstract class BasicGuiExporter implements GuiExporter {
+	public abstract static class BasicGuiExporter implements GuiExporter {
 
 		Window window;
 

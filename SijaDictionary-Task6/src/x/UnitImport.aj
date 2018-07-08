@@ -1,5 +1,6 @@
 package x;
 
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -74,7 +75,7 @@ public privileged aspect UnitImport {
 	 * INTERFACE: GuiImporter
 	 */
 	
-	public interface GuiImporter extends Importer {
+	public static interface GuiImporter extends Importer {
 		
 		public File getFile();
 		
@@ -86,7 +87,7 @@ public privileged aspect UnitImport {
 	 * CLASS: BasicGuiImporter
 	 */
 	
-	public abstract class BasicGuiImporter implements GuiImporter {
+	public abstract static class BasicGuiImporter implements GuiImporter {
 
 		Window window;
 
