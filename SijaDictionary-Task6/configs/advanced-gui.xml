@@ -8,7 +8,7 @@
     <feature automatic="selected" name="Persistence"/>
     <feature automatic="selected" name="Interface"/>
     <feature automatic="selected" manual="selected" name="GUI"/>
-    <feature automatic="selected" manual="selected" name="AddPictures"/>
+    <feature automatic="selected" manual="selected" name="x_AddPictures"/>
     <feature automatic="selected" manual="selected" name="Filesystem"/>
     <feature automatic="selected" name="FileChooser"/>
     <feature automatic="selected" name="DragAndDrop"/>

@@ -2,8 +2,8 @@
 import java.io.File;
 
 import de.faoc.sijadictionary.gui.controls.ImageProcessor;
-import de.faoc.sijadictionary.gui.controls.TranslationImageButton;
 import javafx.scene.image.Image;
+import x.AddPictures.TranslationImageButton;
 
 privileged public aspect Filesystem {
 	

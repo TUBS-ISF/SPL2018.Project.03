@@ -1,22 +1,10 @@
 
 
-import java.io.File;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-
-import de.faoc.sijadictionary.gui.controls.DragAndDropValidator;
-import de.faoc.sijadictionary.gui.controls.ImageProcessor;
-import de.faoc.sijadictionary.gui.controls.TranslationImageButton;
 import javafx.css.PseudoClass;
 import javafx.event.EventHandler;
-import javafx.scene.image.Image;
-import javafx.scene.input.DataFormat;
 import javafx.scene.input.DragEvent;
-import javafx.scene.input.Dragboard;
 import javafx.scene.input.TransferMode;
-import javafx.event.EventHandler;
+import x.AddPictures.TranslationImageButton;
 
 privileged public aspect DragAndDrop {
 	

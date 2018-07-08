@@ -41,40 +41,6 @@ public class ImageProcessor {
 		return null;
 	}
 
-	public static URLImage getImageFromUrl(URL url, long timeout, boolean resetOnProgress) {
-		try {
-			if (url.toString().matches(IMAGE_ENDING_REGEX))
-				return new URLImage(url, timeout, resetOnProgress);
-		} catch (NullPointerException | IllegalArgumentException e) {
-		}
-		return null;
-	}
-
-	public static URLImage getImageFromUrl(URL url, long timeout) {
-		return getImageFromUrl(url, timeout, false);
-	}
-
-	public static URLImage getImageFromUrl(URL url) {
-		return getImageFromUrl(url, -1, false);
-	}
-
-	public static URLImage getImageFromUrl(String urlString, long timeout, boolean resetOnProgress) {
-		try {
-			return getImageFromUrl(new URL(urlString), timeout, resetOnProgress);
-		} catch (MalformedURLException e) {
-		}
-
-		return null;
-	}
-
-	public static URLImage getImageFromUrl(String urlString, long timeout) {
-		return getImageFromUrl(urlString, timeout, false);
-	}
-
-	public static URLImage getImageFromUrl(String urlString) {
-		return getImageFromUrl(urlString, -1, false);
-	}
-
 	public static boolean isValidImageUrl(String urlString) {
 		if (!urlString.matches(IMAGE_ENDING_REGEX))
 			return false;

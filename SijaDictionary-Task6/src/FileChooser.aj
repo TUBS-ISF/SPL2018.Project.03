@@ -1,5 +1,5 @@
 
-import de.faoc.sijadictionary.gui.controls.TranslationImageButton;
+import x.AddPictures.TranslationImageButton;
 
 privileged public aspect FileChooser {
 	

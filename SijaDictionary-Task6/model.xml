@@ -36,7 +36,7 @@ Die Wahl eines Interfaces über welches das Programm gesteuert wird
                     <description>
 Graphische Benutzeroberfläche für die Verwaltung der Wörterbücher
 </description>
-                    <and name="AddPictures">
+                    <and name="x_AddPictures">
                         <description>
 Dazu hinzufügen von Bildern zu den Wörtern
 </description>
@@ -55,7 +55,7 @@ Laden des Bildes aus einer lokalen Datei per klassischem Datei-Dialog
 </description>
                             </feature>
                         </and>
-                        <and name="URL">
+                        <and name="URLPictures">
                             <description>
 Laden von Bildern per URL
 </description>
@@ -174,7 +174,7 @@ Suche nach Wörtern per CLI
         <rule>
             <imp>
                 <var>URLDragAndDrop</var>
-                <var>URL</var>
+                <var>URLPictures</var>
             </imp>
         </rule>
         <rule>

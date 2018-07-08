@@ -8,10 +8,10 @@
     <feature automatic="selected" name="Persistence"/>
     <feature automatic="selected" name="Interface"/>
     <feature automatic="selected" manual="selected" name="GUI"/>
-    <feature automatic="selected" manual="selected" name="AddPictures"/>
+    <feature automatic="selected" manual="selected" name="x_AddPictures"/>
     <feature automatic="selected" manual="selected" name="Filesystem"/>
     <feature automatic="selected" name="FileChooser"/>
-    <feature automatic="selected" manual="selected" name="URL"/>
+    <feature automatic="selected" manual="selected" name="URLPictures"/>
     <feature automatic="selected" name="EnterURL"/>
     <feature automatic="selected" manual="selected" name="DragAndDrop"/>
     <feature manual="selected" name="FSDragAndDrop"/>
